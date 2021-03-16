@@ -6,10 +6,17 @@
   --primary-white : #fff;
   --primary-lightgray : #D3D3D3;
   --primary-dark : rgba(255,255,255,0);
+  --primary-gray : #808080;
+  --primary-red : #ef4035;
+  --primary-hover-red : #f33501;
+
 }
 
 body{
   font-family: "Roboto Condensed";
+}
+nav{
+  z-index: 2;
 }
 /* navbar css */
 
@@ -41,3 +48,68 @@ nav ul li {
 .navbar-nav > li > a:hover {
   border-top : 0.1875rem solid var(--primary-lightgray);
 }
+
+/* header css */
+
+.header-wraper{
+  position: relative;
+  background: url(pc.jpg) no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  z-index: 1;
+}
+
+.main-info h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/* typed css */
+
+.typed-text{
+  font-size: 1.5rem;
+  color: var(--primary-white);
+}
+
+/* about me css */
+
+.btn-about-me{
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  background-color: #343A40;
+  margin: 2rem;
+}
+
+.btn-about-me:hover {
+  text-decoration: none;
+  background-color: #343a4079;
+  color: var(--primary-white);
+}
+
+/* particles css */
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
