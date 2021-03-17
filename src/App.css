@@ -13,11 +13,58 @@
 }
 
 body{
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 nav{
   z-index: 2;
 }
+
+/* scrollbar css */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border: 31px none var(--primary-gray);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a646d79;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgb(85, 107, 206);
+}
+
+::-webkit-scrollbar-track {
+  background: #181A1B;
+  border: 1px solid #181A1B;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: #181A1B;
+}
+
+::-webkit-scrollbar-track:active {
+  background: #181A1B;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
 /* navbar css */
 
 .logo{
@@ -71,9 +118,10 @@ nav ul li {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Roboto Condensed";
+  /* font-family: "Roboto Condensed"; */
   z-index: 1;
 }
+
 
 .main-info h1{
   color: var(--primary-white);
@@ -89,7 +137,7 @@ nav ul li {
 
 /* about me css */
 
-.btn-about-me{
+.btn-contact-me{
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
@@ -98,7 +146,7 @@ nav ul li {
   margin: 2rem;
 }
 
-.btn-about-me:hover {
+.btn-contact-me:hover {
   text-decoration: none;
   background-color: #343a4079;
   color: var(--primary-white);
@@ -113,3 +161,31 @@ nav ul li {
   z-index: 1;
 }
 
+/* about me css */
+
+/* .photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.profile-img{
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border: 1px solid var(--primary-gray);
+}
+
+.me{
+  color: var(--primary-gray);
+  text-transform: uppercase;
+  margin-top: 70px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+@media(max-width : 460px) {
+  .profile-img{
+    width: 10rem;
+  }
+}
